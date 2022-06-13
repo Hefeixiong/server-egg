@@ -19,7 +19,12 @@ module.exports = appInfo => {
   };
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1654756836377_1626';
-
+  config.view = {
+    defaultViewEngine: 'numjucks',
+    mapping: {
+      '.tpl': 'numjucks',
+    },
+  };
   // add your middleware config here
   config.middleware = [];
 
