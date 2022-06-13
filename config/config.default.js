@@ -36,6 +36,13 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
+  // msyql配置
+  config.sequelize = {
+    dialect: 'mysql',
+    host: '47.103.53.54',
+    port: 3306,
+    database: 'node-server',
+  };
 
   return {
     ...config,
