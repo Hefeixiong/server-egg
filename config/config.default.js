@@ -12,6 +12,11 @@ module.exports = appInfo => {
    **/
   const config = exports = {};
 
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  };
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1654756836377_1626';
 
@@ -28,3 +33,4 @@ module.exports = appInfo => {
     ...userConfig,
   };
 };
+
