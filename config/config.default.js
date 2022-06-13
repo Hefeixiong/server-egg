@@ -25,6 +25,10 @@ module.exports = appInfo => {
       '.tpl': 'nunjucks',
     },
   };
+  config.news = {
+    pageSize: 5,
+    serverUrl: 'https://hacker-news.firebaseio.com/v0',
+  };
   // add your middleware config here
   config.middleware = [];
 
